@@ -43,9 +43,15 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   .container {
-    grid-template: "1fr 1fr 1fr 1fr" 350px "1fr 1fr 1fr 1fr" 350px "1fr 1fr 1fr 1fr" 350px;
+    grid-template: "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px;
+  }
+  .container .box.a {
+    grid-column: span 2;
+  }
+  .container .box.b {
+    grid-row: span 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
