@@ -21,20 +21,26 @@
      object-fit: cover;
 }
 
+.container .box.a,
+.container .box.c,
+.container .box.j {
+  grid-column: span 2;
+}
+
+.container .box.d,
+.container .box.g {
+  grid-row: span 2;
+}
+
+.container .box.i {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
 .container .box {
   position: relative;
   background: #7c7c7c;
-}
-
-.container .box.e,
-.container .box.i {
-  grid-area: span 2;
-}
-
-.container .box.a,
-.container .box.b,
-.container .box.h {
-  grid-column: span 2;
 }
 
 @media screen and (max-width: 1200px) {
@@ -46,9 +52,6 @@
 @media screen and (max-width: 900px) {
   .container {
     grid-template: "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px;
-  }
-  .container .box.i {
-    grid-column: span 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
