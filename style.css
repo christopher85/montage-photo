@@ -47,11 +47,26 @@
   .container {
     grid-template: "1fr 1fr 1fr 1fr" 300px "1fr 1fr 1fr 1fr" 300px "1fr 1fr 1fr 1fr" 300px "1fr 1fr 1fr 1fr" 300px;
   }
+  .container .box.b {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .container .box.i {
+    grid-column: span 2;
+  }
 }
 
 @media screen and (max-width: 900px) {
   .container {
     grid-template: "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px;
+  }
+  .container .box.i,
+  .container .box.j {
+    grid-column: span 1;
+  }
+  .container .box.h {
+    grid-column: span 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
