@@ -26,12 +26,12 @@
   background: #7c7c7c;
 }
 
-.container .box.a,
 .container .box.e,
 .container .box.i {
-  grid-row: span 2;
+  grid-area: span 2;
 }
 
+.container .box.a,
 .container .box.b,
 .container .box.h {
   grid-column: span 2;
@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 1200px) {
   .container {
-    grid-template: "1fr 1fr 1fr 1fr" 350px "1fr 1fr 1fr 1fr" 350px "1fr 1fr 1fr 1fr" 350px;
+    grid-template: "1fr 1fr 1fr 1fr" 300px "1fr 1fr 1fr 1fr" 300px "1fr 1fr 1fr 1fr" 300px "1fr 1fr 1fr 1fr" 300px;
   }
 }
 
@@ -47,11 +47,8 @@
   .container {
     grid-template: "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px "1fr 1fr 1fr" 200px;
   }
-  .container .box.a {
+  .container .box.i {
     grid-column: span 2;
-  }
-  .container .box.b {
-    grid-row: span 2;
   }
 }
 /*# sourceMappingURL=style.css.map */
